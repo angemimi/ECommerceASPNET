@@ -10,6 +10,7 @@
 				<th>Description</th>
 				<th>Categotie</th>
 				<th>Prix</th>
+				<th colspan="2"></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -20,6 +21,7 @@
 				<td>@p.Description</td>
 				<td>@p.Categorie</td>
 				<td>@p.Prix</td>
+				<td><a asp-action="EditProductForm" asp-route-pId="@p.IDProduit" class="btn btn-info">Editer</a></td>
 			</tr>
 		}
 		</tbody>

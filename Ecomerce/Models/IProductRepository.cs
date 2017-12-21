@@ -7,5 +7,6 @@ namespace Ecomerce.Models {
     public interface IProductRepository {
         IQueryable<Produit> Produits { get; }
         void AddProduct(Produit p);
+        void EditProduct(Produit p);
     }
 }

@@ -35,13 +35,20 @@ namespace Ecomerce.Controllers
             return View(viewModel);
         }
 
+        // Affichage du formulaire d'ajout de produit
         public ViewResult AddProductForm(Produit p) => View(p);
 
         public ViewResult AddProduct(Produit p)
         {
-            p.IDProduit = Convert.ToString((productRepository.Produits.Count() + 1));
-            productRepository.AddProduct(p);
-            viewModel.Pagination.PageCourante = 1;
+            productRepository.AddProduct(p); // Ajout du produit créée
+            return List(1); // Retour à la première page de la liste des produits
+        }
+
+        // Affichage du formulaire de modification du produit selectionné. On selectionne un produit dont l'id à pour valeur celle passer en parametre
+        public ViewResult EditProductForm(string pId) => View(productRepository.Produits.Single<Produit>(p => p.IDProduit == pId));
+        public ViewResult EditProduct(Produit p)
+        {
+            productRepository.EditProduct(p);
             return View("List", viewModel);
         }
     }

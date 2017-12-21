@@ -14,7 +14,15 @@ namespace Ecommerce.Models
 
         public void AddProduct(Produit p)
         {
-            context.Produits.Add(p);
+            p.IDProduit = Convert.ToString((Produits.Count() + 1)); // Ajout d'un id au produit
+            context.Produits.Add(p); // Ajout du produit à la liste existantes
+            context.SaveChanges(); // Sauvegarde des modification apporté.
+        }
+
+        public void EditProduct(Produit p)
+        {
+            Produit prod = context.Produits.SingleOrDefault<Produit>(pdt => pdt.IDProduit == p.IDProduit);
+            prod = p;
             context.SaveChanges();
         }
     }
