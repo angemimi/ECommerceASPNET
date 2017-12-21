@@ -22,7 +22,7 @@
 				<td>@p.Categorie</td>
 				<td>@p.Prix</td>
 				<td><a asp-action="EditProductForm" asp-route-pId="@p.IDProduit" class="btn btn-info">Editer</a></td>
-				<td><a asp-action="RemoveProduct" asp-route-pId="@p.IDProduit" class="btn btn-info">Supprimer</a></td>
+				<td><a asp-action="RemoveProduct" asp-route-pId="@p.IDProduit" class="btn btn-danger">Supprimer</a></td>
 			</tr>
 		}
 		</tbody>
