@@ -41,7 +41,7 @@ namespace Ecomerce.Controllers
         public ViewResult AddProduct(Produit p)
         {
             productRepository.AddProduct(p); // Ajout du produit créée
-            return List(1); // Retour à la première page de la liste des produits
+            return View("List", viewModel);
         }
 
         // Affichage du formulaire de modification du produit selectionné. On selectionne un produit dont l'id à pour valeur celle passer en parametre
