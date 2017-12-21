@@ -11,5 +11,11 @@ namespace Ecommerce.Models
         private ApplicationDbContext context;
         public EFProductRepository(ApplicationDbContext ctx) { context = ctx; }
         public IQueryable<Produit> Produits => context.Produits.OrderBy(x => x.IDProduit);
+
+        public void AddProduct(Produit p)
+        {
+            context.Produits.Add(p);
+            context.SaveChanges();
+        }
     }
 }

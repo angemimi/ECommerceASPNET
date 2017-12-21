@@ -6,5 +6,6 @@ using System.Threading.Tasks;
 namespace Ecomerce.Models {
     public interface IProductRepository {
         IQueryable<Produit> Produits { get; }
+        void AddProduct(Produit p);
     }
 }

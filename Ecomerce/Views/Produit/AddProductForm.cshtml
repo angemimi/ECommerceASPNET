@@ -1,5 +1,35 @@
 ﻿@model Ecomerce.Models.Produit
 @{
-	@ViewBag.Title = "Ajouter un produit";
+	ViewBag.Title = "Ajouter un produit";
 }
 <h2>Ajouter un Produit</h2>
+<form asp-action="AddProduct" method="post">
+	<div class="form-group row">
+		<label class="col-sm-2">Nom</label>
+		<div class="col-sm-6">
+			<input asp-for="@Model.Nom" class="form-control focus" />
+		</div>
+	</div>
+	<div class="form-group row">
+		<label class="col-sm-2">Catégorie</label>
+		<div class="col-sm-6">
+			<input asp-for="@Model.Categorie" class="form-control" />
+		</div>
+	</div>
+	<div class="form-group row">
+		<label class="col-sm-2">Prix</label>
+		<div class="col-sm-6">
+			<input asp-for="@Model.Prix" class="form-control"/>
+		</div>
+	</div>
+	<div class="form-group row">
+		<label class="col-sm-2">Description</label>
+		<div class="col-sm-6">
+			<textarea asp-for="@Model.Description" class="form-control"></textarea>
+		</div>
+	</div>
+	<div class="btn-group">
+		<button type="button" asp-action="List" class="btn btn-primary">Annuler</button>
+		<button class="btn btn-success" type="submit">Valider</button>
+	</div>
+</form>

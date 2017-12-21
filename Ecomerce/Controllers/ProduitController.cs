@@ -7,6 +7,7 @@ using Ecomerce.Models;
 using Microsoft.EntityFrameworkCore;
 using Ecommerce.Models.ViewModel;
 using Ecommerce.Models.ViewModels;
+using Ecommerce.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -35,5 +36,13 @@ namespace Ecomerce.Controllers
         }
 
         public ViewResult AddProductForm(Produit p) => View(p);
+
+        public ViewResult AddProduct(Produit p)
+        {
+            p.IDProduit = Convert.ToString((productRepository.Produits.Count() + 1));
+            productRepository.AddProduct(p);
+            viewModel.Pagination.PageCourante = 1;
+            return View("List", viewModel);
+        }
     }
 }
