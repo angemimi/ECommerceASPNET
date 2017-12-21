@@ -17,7 +17,7 @@
 		@foreach (Produit p in Model.ProduitsLimitOffset())
 		{
 			<tr data-id="@p.IDProduit">
-				<td>@p.Nom</td>
+				<td><a asp-action="Detail" asp-route-id="@p.IDProduit">@p.Nom</a></td>
 				<td>@p.Description</td>
 				<td>@p.Categorie</td>
 				<td>@p.Prix</td>
