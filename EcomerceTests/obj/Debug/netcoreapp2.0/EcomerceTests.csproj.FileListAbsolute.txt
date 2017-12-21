@@ -1,0 +1,16 @@
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\bin\Debug\netcoreapp2.0\EcomerceTests.deps.json
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\bin\Debug\netcoreapp2.0\EcomerceTests.runtimeconfig.json
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\bin\Debug\netcoreapp2.0\EcomerceTests.runtimeconfig.dev.json
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\bin\Debug\netcoreapp2.0\EcomerceTests.dll
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\bin\Debug\netcoreapp2.0\EcomerceTests.pdb
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\bin\Debug\netcoreapp2.0\Ecomerce.dll
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\bin\Debug\netcoreapp2.0\Ecomerce.pdb
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\obj\Debug\netcoreapp2.0\EcomerceTests.csprojResolveAssemblyReference.cache
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\obj\Debug\netcoreapp2.0\EcomerceTests.csproj.CoreCompileInputs.cache
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\obj\Debug\netcoreapp2.0\EcomerceTests.AssemblyInfoInputs.cache
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\obj\Debug\netcoreapp2.0\EcomerceTests.AssemblyInfo.cs
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\obj\Debug\netcoreapp2.0\EcomerceTests.dll
+C:\Users\angem\source\repos\Ecomerce\EcomerceTests\obj\Debug\netcoreapp2.0\EcomerceTests.pdb

@@ -1,0 +1,11 @@
+C:\Users\angem\source\repos\Ecomerce\Ecomerce\bin\Debug\netcoreapp2.0\Ecomerce.deps.json
+C:\Users\angem\source\repos\Ecomerce\Ecomerce\bin\Debug\netcoreapp2.0\Ecomerce.runtimeconfig.json
+C:\Users\angem\source\repos\Ecomerce\Ecomerce\bin\Debug\netcoreapp2.0\Ecomerce.runtimeconfig.dev.json
+C:\Users\angem\source\repos\Ecomerce\Ecomerce\bin\Debug\netcoreapp2.0\Ecomerce.dll
+C:\Users\angem\source\repos\Ecomerce\Ecomerce\bin\Debug\netcoreapp2.0\Ecomerce.pdb
+C:\Users\angem\source\repos\Ecomerce\Ecomerce\obj\Debug\netcoreapp2.0\Ecomerce.csprojResolveAssemblyReference.cache
+C:\Users\angem\source\repos\Ecomerce\Ecomerce\obj\Debug\netcoreapp2.0\Ecomerce.csproj.CoreCompileInputs.cache
+C:\Users\angem\source\repos\Ecomerce\Ecomerce\obj\Debug\netcoreapp2.0\Ecomerce.AssemblyInfoInputs.cache
+C:\Users\angem\source\repos\Ecomerce\Ecomerce\obj\Debug\netcoreapp2.0\Ecomerce.AssemblyInfo.cs
+C:\Users\angem\source\repos\Ecomerce\Ecomerce\obj\Debug\netcoreapp2.0\Ecomerce.dll
+C:\Users\angem\source\repos\Ecomerce\Ecomerce\obj\Debug\netcoreapp2.0\Ecomerce.pdb

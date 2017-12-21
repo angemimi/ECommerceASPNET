@@ -1,0 +1,30 @@
+﻿@model Ecommerce.Models.ViewModels.ListeProduitsViewModels
+@{
+	ViewBag.Title = "E-Commerce";
+}
+<div class="table-responsive">
+	<table class="table table-striped table-hover">
+		<thead>
+			<tr>
+				<th>Nom</th>
+				<th>Description</th>
+				<th>Categotie</th>
+				<th>Prix</th>
+			</tr>
+		</thead>
+		<tbody>
+		@foreach (Produit p in Model.ProduitsLimitOffset())
+		{
+			<tr data-id="@p.IDProduit">
+				<td>@p.Nom</td>
+				<td>@p.Description</td>
+				<td>@p.Categorie</td>
+				<td>@p.Prix</td>
+			</tr>
+		}
+		</tbody>
+	</table>
+		<div page-model="@Model.Pagination" page-action="List">
+			@Model.Pagination.PageCourante sur @Model.Pagination.NbPage()
+		</div>
+</div>
