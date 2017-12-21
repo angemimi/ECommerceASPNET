@@ -10,11 +10,6 @@ namespace Ecommerce.Models.ViewModel
         public int NombreProduits { get; set; }
         public int ProduitsParPage { get; set; } = 5;
         public int PageCourante { get; set; } = 1;
-
-        public decimal NbPage()
-        {
-            decimal nbPage = NombreProduits / ProduitsParPage;
-            return Math.Ceiling(nbPage);
-        }
+        public decimal NbPage => Math.Ceiling(Convert.ToDecimal(NombreProduits / ProduitsParPage));
     }
 }

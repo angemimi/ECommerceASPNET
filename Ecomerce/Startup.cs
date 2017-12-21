@@ -39,7 +39,7 @@ namespace Ecomerce
             {
                 routes.MapRoute(name: "default", template: "{controller=Produit}/{action=List}/{id?}");
             });
-            SeedData.Produits(app);
+            //SeedData.Produits(app);
         }
     }
 }

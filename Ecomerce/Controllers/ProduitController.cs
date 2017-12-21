@@ -27,9 +27,13 @@ namespace Ecomerce.Controllers
             };
         }
         
-        public ViewResult List()
+        public ViewResult List(int productPage)
         {
+            productPage = productPage > 0 ? productPage : 1;
+            viewModel.Pagination.PageCourante = productPage;
             return View(viewModel);
         }
+
+        public ViewResult AddProductForm(Produit p) => View(p);
     }
 }
