@@ -8,5 +8,6 @@ namespace Ecomerce.Models {
         IQueryable<Produit> Produits { get; }
         void AddProduct(Produit p);
         void EditProduct(Produit p);
+        void RemoveProduct(Produit p);
     }
 }

@@ -51,5 +51,11 @@ namespace Ecomerce.Controllers
             productRepository.EditProduct(p);
             return View("List", viewModel);
         }
+
+        public ViewResult RemoveProduct(string pId)
+        {
+            productRepository.RemoveProduct(productRepository.Produits.Single<Produit>(p => p.IDProduit == pId));
+            return View("List", viewModel);
+        }
     }
 }

@@ -15,13 +15,19 @@ namespace Ecommerce.Models
 
         public void AddProduct(Produit p)
         {
-            context.Produits.Update(p); // Ajout du produit à la liste existantes
+            context.Entry(p).State = EntityState.Added;
             context.SaveChanges(); // Sauvegarde des modification apporté.
         }
 
         public void EditProduct(Produit p)
         {
             context.Entry(p).State = EntityState.Modified;
+            context.SaveChanges();
+        }
+
+        public void RemoveProduct(Produit p)
+        {
+            context.Entry(p).State = EntityState.Deleted;
             context.SaveChanges();
         }
     }
